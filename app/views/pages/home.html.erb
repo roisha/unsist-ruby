@@ -1,5 +1,12 @@
 
 <div class="jumbotron center">
-<h1>Welcome to unsist!</h1>
-<p>Sign up for <%=	link_to "Unsist","http://unsist.com", class: "btn btn-warning btn-lg" %></p>
+	<h1>Welcome to unsist!</h1>
+	<% if user_signed_in? %>
+
+	<%else %>
+		<p>
+		<%=	link_to "Sign up",new_user_registration_path, class: "btn btn-warning btn-lg" %>
+		<%=	link_to "Log in",new_user_session_path, class: "btn btn-primary btn-lg" %>
+		</p>
+	<% end %>
 </div>
