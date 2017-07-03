@@ -15,6 +15,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootstrap-sass'
 gem 'devise', '~> 4.3'
 gem 'paperclip', '~> 4.0'
+gem 'aws-sdk', '~> 2.10.7'
 
 
 group :development, :test do 
