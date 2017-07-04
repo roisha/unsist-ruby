@@ -1,3 +1,4 @@
+ruby '2.4.0'
 source 'https://rubygems.org'
 
 git_source(:github) do |repo_name|
@@ -15,7 +16,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootstrap-sass'
 gem 'devise', '~> 4.3'
 gem 'paperclip', '~> 4.0'
-gem 'aws-sdk', '~> 2.3'
+gem 'aws-sdk', '< 2.0'
 
 
 group :development, :test do 
